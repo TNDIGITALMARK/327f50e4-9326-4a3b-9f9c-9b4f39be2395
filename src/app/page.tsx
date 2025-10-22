@@ -134,13 +134,13 @@ export default function HomePage() {
             <div className="bg-white rounded-2xl shadow-md p-6 md:p-8 text-center hover:shadow-2xl card-interactive hover-lift animate-slide-in-right group">
               <div className="text-5xl md:text-6xl mb-4 animate-wiggle group-hover:scale-110 transition-transform duration-300" style={{animationDelay: '0.2s'}}>🐝</div>
               <h3 className="font-['Comfortaa'] text-lg md:text-xl font-bold text-[#1E1E1E] mb-3">
-                Comandă personalizată
+                Comandă Personalizată
               </h3>
               <Link
                 href="/comanda-personalizata"
                 className="inline-block bg-[#FFC107] hover:bg-[#FFD966] text-[#1E1E1E] font-semibold px-6 py-2.5 md:py-3 rounded-full transition-all duration-300 mt-2 shadow-md hover:shadow-lg btn-press"
               >
-                Creează unica!
+                Creează Hăinuța Unică!
               </Link>
             </div>
           </div>
@@ -207,7 +207,7 @@ export default function HomePage() {
               href="/colectii"
               className="inline-block bg-[#1E1E1E] hover:bg-[#333333] text-white font-semibold px-8 py-3 md:py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-2xl hover-lift btn-press"
             >
-              Vezi toate colecțiile
+              Vezi Toate Colecțiile
             </Link>
           </div>
         </div>

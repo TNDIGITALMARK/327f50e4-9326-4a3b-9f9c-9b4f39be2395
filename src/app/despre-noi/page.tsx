@@ -54,7 +54,7 @@ export default function AboutPage() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto">
           <h2 className="font-['Comfortaa'] text-3xl font-bold text-center text-[#1E1E1E] mb-12">
-            Ce ne face speciali
+            Ce Ne Face Speciali
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -174,13 +174,13 @@ export default function AboutPage() {
               href="/colectii"
               className="inline-block bg-[#FFC107] hover:bg-[#FFD966] text-[#1E1E1E] font-semibold px-8 py-3 rounded-full transition-colors"
             >
-              Vezi colecțiile
+              Vezi Colecțiile
             </a>
             <a
               href="/comanda-personalizata"
               className="inline-block bg-[#1E1E1E] hover:bg-[#333333] text-white font-semibold px-8 py-3 rounded-full transition-colors"
             >
-              Comandă personalizată
+              Comandă Personalizată
             </a>
           </div>
         </div>

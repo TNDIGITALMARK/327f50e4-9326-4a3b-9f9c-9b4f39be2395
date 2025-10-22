@@ -148,9 +148,14 @@ export default function CollectionsPage() {
                   </div>
                   <div className="mt-3">
                     <p className="text-xs text-gray-500 mb-2">Mărimi: {product.sizes.join(', ')}</p>
-                    <button className="w-full bg-[#FFC107] hover:bg-[#FFD966] text-[#1E1E1E] font-semibold py-2.5 rounded-full transition-colors">
-                      Comandă
-                    </button>
+                    <a
+                      href={`https://wa.me/40736024836?text=Salut!%20Sunt%20interesat%20de%20${encodeURIComponent(product.name)}%20-%20${product.price}%20RON`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full bg-[#FFC107] hover:bg-[#FFD966] text-[#1E1E1E] font-semibold py-2.5 rounded-full transition-colors text-center"
+                    >
+                      Comandă pe WhatsApp
+                    </a>
                   </div>
                 </div>
               </div>
@@ -168,13 +173,15 @@ export default function CollectionsPage() {
               Nu ai găsit ceea ce căutai?
             </h2>
             <p className="text-gray-700 mb-6">
-              Creează o comandă personalizată și lasă-ne să realizăm visul tău pentru cel mic!
+              Contactează-ne pe WhatsApp și vom crea împreună visul tău pentru cel mic!
             </p>
             <a
-              href="/comanda-personalizata"
+              href="https://wa.me/40736024836?text=Salut!%20Aș%20dori%20să%20discut%20despre%20o%20comandă%20personalizată."
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#FFC107] hover:bg-[#FFD966] text-[#1E1E1E] font-semibold px-8 py-3 rounded-full transition-colors"
             >
-              Comandă personalizată
+              Comandă Personalizată pe WhatsApp
             </a>
           </div>
         </div>

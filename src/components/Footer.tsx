@@ -38,11 +38,11 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-['Comfortaa'] font-bold text-lg mb-4 text-[#FFD966]">Link-uri rapide</h4>
+            <h4 className="font-['Comfortaa'] font-bold text-lg mb-4 text-[#FFD966]">Link-uri Rapide</h4>
             <ul className="space-y-2 text-gray-300">
               <li>
                 <Link href="/despre-noi" className="hover:text-[#FFD966] transition-colors">
-                  Despre noi
+                  Despre Noi
                 </Link>
               </li>
               <li>
@@ -52,7 +52,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/comanda-personalizata" className="hover:text-[#FFD966] transition-colors">
-                  Comandă personalizată
+                  Comandă Personalizată
                 </Link>
               </li>
               <li>
