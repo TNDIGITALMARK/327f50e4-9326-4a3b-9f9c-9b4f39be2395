@@ -19,8 +19,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "Stupărici - Haine Handmade pentru Copii",
+  description: "Haine vesele și colorate pentru cei mici, create cu dragoste. Articole vestimentare handmade și personalizabile pentru copii - rochii, pantaloni, body-uri și accesorii tricotate manual.",
+  keywords: "haine copii handmade, articole vestimentare copii, rochii copii personalizate, haine tricotate manual, body copii personalizat, imbracaminte copii Romania",
 };
 
 export default function RootLayout({
@@ -29,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="ro" suppressHydrationWarning>
       <head>
 
       </head>

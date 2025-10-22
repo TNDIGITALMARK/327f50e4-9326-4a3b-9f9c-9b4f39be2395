@@ -1,59 +1,79 @@
 @import "tailwindcss";
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Stupărici Design System - Bee-inspired children's clothing brand
+   Extracted from design reference with pixel-perfect precision
+   Colors: Honey Yellow, White, Black - playful, warm, child-friendly
 */
 
+/* Font Imports - Rounded, playful, child-friendly typography */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 :root {
-  /* Pure white background with crisp black text */
-  --background: 0 0% 100%;
-  --foreground: 0 0% 0%;
+  /* Stupărici Brand Colors - Exact values from design reference */
+  /* Primary: Honey Yellow (bee theme) */
+  --honey-yellow: 48 100% 70%;     /* #FFD966 - Main brand color */
+  --golden-yellow: 45 100% 51%;    /* #FFC107 - CTA buttons */
 
-  /* Clean white cards with black text */
-  --card: 0 0% 100%;
-  --card-foreground: 0 0% 0%;
+  /* Neutrals */
+  --white: 0 0% 100%;              /* #FFFFFF - Clean backgrounds */
+  --cream: 48 100% 97%;            /* #FFF9E6 - Soft sections */
+  --charcoal: 0 0% 12%;            /* #1E1E1E - Text, footer */
 
-  /* Popovers with white background */
-  --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 0%;
+  /* Accent Colors */
+  --soft-green: 120 73% 75%;       /* #90EE90 - Natural elements */
+  --sky-blue: 197 71% 67%;         /* #87CEEB - Natural elements */
 
-  /* Primary: Black with white text */
-  --primary: 0 0% 0%;
-  --primary-foreground: 0 0% 100%;
+  /* Semantic Color Mappings */
+  --background: var(--white);
+  --foreground: var(--charcoal);
 
-  /* Secondary: Light gray background with black text */
-  --secondary: 0 0% 97%;
-  --secondary-foreground: 0 0% 0%;
+  --card: var(--white);
+  --card-foreground: var(--charcoal);
 
-  /* Muted: Subtle gray with darker text */
-  --muted: 0 0% 96%;
+  --popover: var(--white);
+  --popover-foreground: var(--charcoal);
+
+  /* Primary is Honey Yellow for brand identity */
+  --primary: var(--honey-yellow);
+  --primary-foreground: var(--charcoal);
+
+  /* Secondary is Golden Yellow for CTAs */
+  --secondary: var(--golden-yellow);
+  --secondary-foreground: var(--charcoal);
+
+  --muted: var(--cream);
   --muted-foreground: 0 0% 40%;
 
-  /* Accent: Light gray */
-  --accent: 0 0% 96%;
-  --accent-foreground: 0 0% 0%;
+  --accent: var(--honey-yellow);
+  --accent-foreground: var(--charcoal);
 
-  /* Destructive: Clean red */
   --destructive: 0 70% 50%;
-  --destructive-foreground: 0 0% 100%;
+  --destructive-foreground: var(--white);
 
-  /* Borders: Subtle gray */
+  /* Borders - Soft and subtle */
   --border: 0 0% 90%;
-  --input: 0 0% 90%;
-  --ring: 0 0% 0%;
+  --input: 0 0% 85%;
+  --ring: var(--honey-yellow);
 
-  /* Minimal rounded corners */
-  --radius: 0.375rem;
+  /* Border Radius - Rounded, playful (12-20px) */
+  --radius: 1rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
 
-  /* Sidebar: Clean white with black text */
-  --sidebar-background: 0 0% 100%;
-  --sidebar-foreground: 0 0% 0%;
-  --sidebar-primary: 0 0% 0%;
-  --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 0 0% 96%;
-  --sidebar-accent-foreground: 0 0% 0%;
+  /* Sidebar */
+  --sidebar-background: var(--white);
+  --sidebar-foreground: var(--charcoal);
+  --sidebar-primary: var(--honey-yellow);
+  --sidebar-primary-foreground: var(--charcoal);
+  --sidebar-accent: var(--cream);
+  --sidebar-accent-foreground: var(--charcoal);
   --sidebar-border: 0 0% 90%;
-  --sidebar-ring: 0 0% 0%;
+  --sidebar-ring: var(--honey-yellow);
+
+  /* Typography System */
+  --font-heading: 'Comfortaa', 'Quicksand', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-playful: 'Quicksand', sans-serif;
 }
 
 .dark {
@@ -168,36 +188,156 @@ All colors MUST be HSL.
   border-color: hsl(var(--border));
 }
 
+/* Universal Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Base HTML/Body Styles */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
   font-feature-settings: "rlig" 1, "calt" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
 }
 
-/* Minimal, clean typography */
+/* Typography Scale - Playful, rounded, child-friendly */
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: hsl(var(--charcoal));
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
   font-weight: 600;
-  letter-spacing: -0.025em;
-  color: hsl(var(--foreground));
 }
 
-/* Clean button styles */
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Paragraph and Text Elements */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+a {
+  color: hsl(var(--charcoal));
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: hsl(var(--golden-yellow));
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+em, i {
+  font-style: italic;
+}
+
+/* Button Defaults - Rounded, playful */
 button {
+  font-family: var(--font-body);
   font-weight: 500;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  padding: 0.625rem 1.25rem;
 }
 
-/* Subtle shadows for depth */
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Element Defaults */
+input, select, textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  border-radius: var(--radius);
+  border: 2px solid hsl(var(--input));
+  padding: 0.625rem 0.875rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: hsl(var(--honey-yellow));
+  box-shadow: 0 0 0 3px hsla(var(--honey-yellow), 0.15);
+}
+
+label {
+  font-weight: 500;
+  color: hsl(var(--charcoal));
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* Soft, playful shadows matching the design */
 .shadow-sm {
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
 }
 
 .shadow {
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .shadow-md {
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+.shadow-lg {
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Image defaults - rounded corners consistent with design */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
 }
