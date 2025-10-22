@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="space-y-3 text-gray-300">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>+40 700 000 000</span>
+                <span>+40 736 024 836</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
@@ -82,7 +82,7 @@ export default function Footer() {
                 <Facebook className="w-5 h-5" />
               </Link>
               <Link
-                href="https://wa.me/40700000000"
+                href="https://wa.me/40736024836"
                 target="_blank"
                 className="w-10 h-10 bg-[#FFD966] rounded-full flex items-center justify-center text-[#1E1E1E] hover:bg-[#FFC107] transition-colors"
               >
